@@ -1,0 +1,110 @@
+{
+	"id": "51adb0cc-d85d-406a-9ba0-b5c0cfcc81c3",
+	"name": "API testing",
+	"timestamp": "2025-12-14T09:52:45.278Z",
+	"collection_id": "50799017-c1b2024a-c435-4996-ad75-90f575e55a4f",
+	"folder_id": 0,
+	"environment_id": "50799017-829a287b-ae05-4f7b-94d4-977467c4ea09",
+	"totalPass": 0,
+	"delay": "4000",
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-12-14T09:52:25.860Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "bb643807-9263-4169-9512-3eedcd879bd2",
+			"name": "Create Repo",
+			"url": "https://api.github.com/user/repos",
+			"time": 1209,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1209
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "151c6417-4335-44ce-8108-ddc51db6752c",
+			"name": "Read Repo",
+			"url": "https://api.github.com/repos/Olais11/api",
+			"time": 373,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				373
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "e9fa1dd1-ded2-4dbd-9625-e874cfdd7415",
+			"name": "Update Repo",
+			"url": "https://api.github.com/repos/Olais11/api",
+			"time": 679,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				679
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "2e44fbc9-45b2-417f-91f7-3a63cfe0e5f8",
+			"name": "Delete Repo",
+			"url": "https://api.github.com/repos/Olais11/api-testing",
+			"time": 504,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				504
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2765,
+	"collection": {
+		"requests": [
+			{
+				"id": "bb643807-9263-4169-9512-3eedcd879bd2",
+				"method": "POST"
+			},
+			{
+				"id": "151c6417-4335-44ce-8108-ddc51db6752c",
+				"method": "GET"
+			},
+			{
+				"id": "e9fa1dd1-ded2-4dbd-9625-e874cfdd7415",
+				"method": "PATCH"
+			},
+			{
+				"id": "2e44fbc9-45b2-417f-91f7-3a63cfe0e5f8",
+				"method": "DELETE"
+			}
+		]
+	}
+}
